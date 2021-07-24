@@ -1,0 +1,3 @@
+library(myPackage)
+
+hello()
