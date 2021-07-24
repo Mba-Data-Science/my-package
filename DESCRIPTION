@@ -1,11 +1,10 @@
 Package: myPackage
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Pacotes do curso de MBA USP  
+Version: 0.2.0
+Author: Ivaney Vieira de Sales
+Maintainer: The package maintainer <ivaney@usp.br>
+Description: Coletânea de funções usadas nas aula de Data Science.
+License: OpenSource
 Encoding: UTF-8
 LazyData: true
