@@ -2,6 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-tests/*
+tests/*.R
 ..Rcheck
 .idea
