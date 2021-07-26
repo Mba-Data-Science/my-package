@@ -1,10 +1,9 @@
 Package: myPackage
 Type: Package
-Title: Pacotes do curso de MBA USP  
-Version: 0.2.0
-Author: Ivaney Vieira de Sales
-Maintainer: The package maintainer <ivaney@usp.br>
-Description: Coletânea de funções usadas nas aula de Data Science.
-License: OpenSource
-Encoding: UTF-8
-LazyData: true
+Title: What the package does (short line)
+Version: 1.0
+Date: 2021-07-25
+Author: Who wrote it
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+License: What license is it under?

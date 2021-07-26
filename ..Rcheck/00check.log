@@ -1,0 +1,145 @@
+* using log directory ‘/home/ivaneyvieira/Dropbox/mba/myPackage/..Rcheck’
+* using R version 4.1.0 (2021-05-18)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* using session charset: UTF-8
+* checking for file ‘./DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘myPackage’ version ‘1.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .RData
+  .Rhistory
+  .gitignore
+  .idea/.gitignore
+  ..Rcheck
+  .Rproj.user
+  .git
+  .idea
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘myPackage’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: /home/ivaneyvieira/Dropbox/mba/myPackage/man/myPackage-package.Rd:27: All text must be in a section
+  Warning: /home/ivaneyvieira/Dropbox/mba/myPackage/man/myPackage-package.Rd:28: All text must be in a section
+See ‘/home/ivaneyvieira/Dropbox/mba/myPackage/..Rcheck/00install.out’ for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Malformed Description field: should contain one or more complete sentences.
+Non-standard license specification:
+  What license is it under?
+Standardizable: FALSE
+Checking should be performed on sources prepared by ‘R CMD build’.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Found the following directory with the name of a check directory:
+  ./..Rcheck
+Most likely, these were included erroneously.
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+carregaPacotes: no visible global function definition for
+  ‘installed.packages’
+carregaPacotes: no visible global function definition for
+  ‘install.packages’
+clusterHierarquico: no visible global function definition for ‘cutree’
+comparaDendograma: no visible global function definition for ‘%>%’
+comparaDendograma: no visible global function definition for
+  ‘as.dendrogram’
+comparaDendograma: no visible global function definition for ‘dendlist’
+comparaDendograma: no visible global function definition for
+  ‘tanglegram’
+comparaDendograma: no visible global function definition for
+  ‘entanglement’
+hclustAverage: no visible global function definition for ‘hclust’
+hclustComplete: no visible global function definition for ‘hclust’
+hclustSingle: no visible global function definition for ‘hclust’
+hclustWardD: no visible global function definition for ‘hclust’
+matrizDistancia: no visible global function definition for ‘dist’
+plotDendograma: no visible global function definition for ‘rect.hclust’
+plotSilhouette: no visible global function definition for
+  ‘fviz_nbclust’
+plotSilhouette: no visible binding for global variable ‘hcut’
+plotWss: no visible global function definition for ‘fviz_nbclust’
+plotWss: no visible binding for global variable ‘hcut’
+toDataFrame: no visible global function definition for ‘%>%’
+viewTable: no visible global function definition for ‘%>%’
+viewTable: no visible global function definition for ‘kable’
+viewTable: no visible global function definition for ‘kable_styling’
+Undefined global functions or variables:
+  %>% as.dendrogram cutree dendlist dist entanglement fviz_nbclust
+  hclust hcut install.packages installed.packages kable kable_styling
+  rect.hclust tanglegram
+Consider adding
+  importFrom("stats", "as.dendrogram", "cutree", "dist", "hclust",
+             "rect.hclust")
+  importFrom("utils", "install.packages", "installed.packages")
+to your NAMESPACE file.
+* checking Rd files ... WARNING
+prepare_Rd: myPackage-package.Rd:27: All text must be in a section
+prepare_Rd: myPackage-package.Rd:28: All text must be in a section
+* checking Rd metadata ... OK
+* checking Rd cross-references ... NOTE
+Unknown package ‘<pkg>’ in Rd xrefs
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in ‘myPackage-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: hello
+> ### Title: Hello, World!
+> ### Aliases: hello
+> 
+> ### ** Examples
+> 
+> hello()
+Error in hello() : could not find function "hello"
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... WARNING
+'library' or 'require' calls not declared from:
+  ‘dplyr’ ‘factoextra’ ‘gridExtra’ ‘kableExtra’ ‘knitr’ ‘tidyverse’
+* checking tests ... ERROR
+  Running ‘clusteringTeste.R’
+Running the tests in ‘tests/clusteringTeste.R’ failed.
+Last 13 lines of output:
+  > dataFrame <- alunos_pap %>% select_if(is.numeric)
+  > 
+  > dataFrame
+      Matematica Portugues Biologia
+  Dri          9         7        5
+  Li           5         4        6
+  Bru          6         6        5
+  Mi          10         8        6
+  Re           4         4        5
+  Ze           4         9        6
+  > 
+  > distMatrix <- dataFrame %>% matrizDistancia()
+  Error in matrizDistancia(.) : could not find function "matrizDistancia"
+  Calls: %>%
+  Execution halted
+* checking PDF version of manual ... OK
+* DONE
+Status: 2 ERRORs, 4 WARNINGs, 4 NOTEs
