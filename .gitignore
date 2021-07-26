@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 tests/*.R
+tests/dados
 ..Rcheck
 .idea
